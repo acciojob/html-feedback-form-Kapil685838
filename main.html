@@ -8,16 +8,20 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1>Feedback Form</h1>
 	<form>
-		<h1>Feedback Form</h1>
-		<label for = "name" pattern="[A-Za-z]{3,50}">Name</label>
-		<input type = "text" id = "name"> <br>
+		<label for = "name">Name</label>
+		<input type = "text" id = "name" minlength = "3" maxlength = "50" required> 
+		<br>
 		<label for = "portfolio">Portfolio</label>
-		<input type = "url" id = "portfolio"><br>
-		<label for = "favColor">Color</label>
-		<input type = "color" id = "favColor"><br>
-		<label for = "likeness">likeness</label>
-		<input type = "range" id = "likeness"> <br>
+		<input type = "url" id = "portfolio" required>
+		<br>
+		<label for = "favColor">Your fav color</label>
+		<input type = "color" id = "favColor">
+		<br>
+		<label for = "likeness">From one to hundred choose likeness</label>
+		<input type = "range" id = "likeness" min = "1" max = "100"> 
+		<br>
 		<button type = "submit" value = "Submit">Submit</button>
 	</form>
     <script type="text/javascript" src="./script.js">
